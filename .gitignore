@@ -1,0 +1,62 @@
+frontend/node_modules
+frontend/node_modules
+frontend/build
+frontend/dist
+frontend/node_modules
+frontend/.DS_Store
+frontend/.idea
+frontend/sassdoc
+frontend/src/assets/sass/theme/_vendor_extensions
+
+# compiled output
+frontend/dist
+frontend/tmp
+frontend/out-tsc
+
+# dependencies
+frontend/node_modules
+
+# profiling files
+frontend/chrome-profiler-events.json
+frontend/speed-measure-plugin.json
+
+# IDEs and editors
+frontend/.idea
+frontend/.project
+frontend/.classpath
+frontend/.c9/
+frontend/*.launch
+frontend/.settings/
+frontend/*.sublime-workspace
+
+# IDE - VSCode
+frontend/.vscode/*
+frontend/!.vscode/settings.json
+frontend/!.vscode/tasks.json
+frontend/!.vscode/launch.json
+frontend/!.vscode/extensions.json
+
+# misc
+frontend/.angular/cache
+frontend/.sass-cache
+frontend/connect.lock
+frontend/coverage
+frontend/libpeerconnection.log
+frontend/npm-debug.log
+frontend/yarn-error.log
+frontend/testem.log
+frontend/typings
+
+# System Files
+frontend/.DS_Store
+frontend/Thumbs.db
+
+# Compiled files
+frontend/layout.css
+frontend/src/assets/demo/styles/badges.css
+frontend/src/assets/demo/styles/code.css
+
+frontend/.angular/cache/17.0.7/angular-webpack/feb42a5f822967d6e0174650e976678108abdc4a/7.pack
+frontend/src/assets/layout/styles/layout/preloading.css
+frontend/src/assets/layout/styles/theme/designer
+

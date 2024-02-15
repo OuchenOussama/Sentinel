@@ -1,0 +1,30 @@
+<div class="card">
+    <p-toolbar>
+        <div class="p-toolbar-group-start">
+            <p-button label="Analyse" (click)="extractEmotions()" [disabled]="analyserDisabled"
+                class="p-button-success mr-2" [loading]="analyseLoading" icon="pi pi-chart-line"></p-button>
+        </div>
+        <div class="p-toolbar-group-center">
+            <div class="js-upload" this.resultsDisabled=true; uk-form-custom>
+                <input type="file" (change)="onUpload($event)" multiple>
+                <p-button styleClass="p-button-secondary" label="Select" icon="pi pi-plus" type="button"
+                    tabindex="-1"></p-button>
+            </div>
+        </div>
+    </p-toolbar>
+</div>
+
+<div class="card">
+    <div class="flex align-items-center justify-content-center gap-2 flex-wrap" *ngIf="!(analyseLoading || resulLoading)">
+        <p-chip [label]="result.face_id.toUpperCase()" [image]="result.image_path" *ngFor="let result of results" size="xlarge"></p-chip>
+    </div>
+    <div class="loading-section" *ngIf="analyseLoading || resulLoading">
+        <p-progressSpinner styleClass="w-4rem h-4rem" strokeWidth="8" fill="var(--surface-ground)"
+            animationDuration=".5s"></p-progressSpinner>
+    </div>
+    <div class="result-body centered-flex" *ngIf="!(analyseLoading || resulLoading)" >
+        <div class="chart">
+            <p-chart *ngIf="data" type="radar" [data]="data" [options]="options" ></p-chart>
+        </div>
+    </div>
+</div>

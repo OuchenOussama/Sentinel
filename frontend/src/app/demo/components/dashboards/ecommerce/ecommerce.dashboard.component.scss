@@ -1,0 +1,29 @@
+.loading-section{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.centered-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-body{
+
+    width: 100%;
+    display: flex;
+    .video{
+        width: 50%;
+    }
+
+    .chart{
+        width: 50%;
+    }
+}
+

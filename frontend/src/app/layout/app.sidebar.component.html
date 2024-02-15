@@ -1,0 +1,14 @@
+<div class="layout-sidebar" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+    <div class="sidebar-header">
+        <a [routerLink]="['/']" class="app-logo">
+            <img src="assets/logo.png" alt="" width="150">
+          
+        </a>
+        <button class="layout-sidebar-anchor p-link z-2 mb-2" type="button" (click)="anchor()"></button>
+    </div>
+ 
+
+    <div #menuContainer class="layout-menu-container">
+        <app-menu></app-menu>
+    </div>
+</div>
